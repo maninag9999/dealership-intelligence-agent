@@ -1,0 +1,7 @@
+dealership:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../data/processed/dealership.duckdb
+      threads: 4
