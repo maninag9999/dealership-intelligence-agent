@@ -57,3 +57,7 @@ select = ["E", "F", "I", "N", "UP", "B", "SIM", "RUF"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+[tool.ruff.lint.per-file-ignores]
+"src/dealership/ml/*.py" = ["N806", "N803", "B023", "RUF002", "RUF003"]
+"scripts/train_models.py" = ["E501"]
+"scripts/verify_ml.py" = ["RUF001"]
